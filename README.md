@@ -89,3 +89,12 @@ $nbMsgSend = AppMailer::create()
 Dependency
 --------------
 - [SwiftMailer](http://swiftmailer.org/)
+
+
+
+History Log
+------------------
+    
+- 1.0.0 -- 2016-12-23
+
+    - initial commit
