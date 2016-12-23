@@ -29,9 +29,6 @@ class AppMailer extends Mailer
 
     public static function notif($msg, $subject = null)
     {
-        if (true === self::$debug) {
-            return 1;
-        }
         if (null === $subject) {
             $subject = "New message from " . MAILER_SENDER;
         }
