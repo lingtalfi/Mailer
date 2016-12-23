@@ -49,7 +49,7 @@ Send a message to yourself
 To send yourself a message, use the notif method:
 
 ```php
-AppMailer::create()->notif("alert: an exception occurred in...");
+AppMailer::create()->notif("alert: an exception occurred in...")->send();
 ```
 
 
@@ -94,6 +94,10 @@ Dependency
 
 History Log
 ------------------
+    
+- 2.0.0 -- 2016-12-23
+
+    - AppMailer->notif now returns the instance and doesn't send the message
     
 - 1.0.0 -- 2016-12-23
 

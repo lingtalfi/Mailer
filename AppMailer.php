@@ -38,8 +38,7 @@ class AppMailer extends Mailer
         return self::create()
             ->to(MAILER_ADMIN)
             ->messagePlain($msg)
-            ->subject($subject)
-            ->send();
+            ->subject($subject);
     }
 
 
